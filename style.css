@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: fixed;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background: #f9f9f9;
+    color: rgb(138, 45, 99);
+    padding: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+header{
+    color: #fff;
+    padding: 2rem 1rem;
+    text-align: center;
+    border: 20px;
+    border-radius: 20px;
+    background: linear-gradient(-45deg,#ff6ec4,#787f57,#4ade80,#facc15);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+}
+@keyframes gradientBG {
+    0% {background-position: 0% 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0% 50%;}
+}
+
+
+
+.neon{
+    font-size: 2.5rem;
+    color: rgb(224, 224, 224);
+}
+.neon:hover{
+    font-size: 3rem;
+    color: rgb(0, 0, 0);
+    transition: 0.4s;
+}
+
+header p{
+    margin: 0.5rem;
+}
+nav a{
+    margin: 0.1rem;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+
+section{
+    padding: 2rem;
+    max-width: 850px;
+    margin: auto;
+}
+section h2{
+    font-size: 2rem;
+    color: #222;
+    margin-bottom: 1rem;
+}
+
+#contact a{
+    color: #06c;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+#contact a:hover{
+    text-decoration: underline;
+
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #1f0d0d;
+    color: #e9e4e4;
+    margin-top: 2rem;
+}
+.gallery{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.gallery img{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0.4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+.gallery img:hover{
+    transform: scale(1.1);
+}
+
+@media(max-width:600px){
+    nav a {
+        display: block;
+        margin: 0.5rem 0;
+
+    }
+    header h1{
+        font-size: 2rem;
+    }
+}
